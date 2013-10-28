@@ -6,7 +6,7 @@
  * @version 2.2.0
  * @author Darcy Clarke
  * @url http://darcyclarke.me
- * @createdat Tue May 28 2013 17:44:02 GMT-0500 (CDT)
+ * @createdat Mon Oct 28 2013 12:57:18 GMT-0500 (CDT)
  *
  * Based on UA-Parser (https://github.com/tobie/ua-parser) by Tobie Langel
  *
@@ -479,6 +479,9 @@
                 other: true
             }, {
                 regex: "(MSIE) (\\d+)\\.(\\d+)",
+                family_replacement: "IE"
+            }, {
+                regex: "Trident(.*)rv.(\\d+)\\.(\\d+)",
                 family_replacement: "IE"
             } ],
             os_parsers: [ {

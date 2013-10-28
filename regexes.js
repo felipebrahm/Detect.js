@@ -515,6 +515,10 @@ var regexes = {
     {
       "regex": "(MSIE) (\\d+)\\.(\\d+)",
       "family_replacement": "IE"
+    },
+    {
+      "regex": "Trident(.*)rv.(\\d+)\\.(\\d+)",
+      "family_replacement": "IE"
     }
   ],
   os_parsers: [
